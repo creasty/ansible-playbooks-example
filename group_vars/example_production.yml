@@ -1,0 +1,17 @@
+app:
+  name:        example
+  server_name: www.example.dev
+
+user:
+  name:           webapp
+  path:           /home/webapp
+  authorized_key: webapp
+  id_rsa:         id_rsa
+
+ruby:
+  version:     2.1.1
+  gemset_name: my-gemset
+
+rails:
+  env: production
+
