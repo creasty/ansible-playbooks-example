@@ -32,6 +32,13 @@ How to use
 $ git submodule add git@github.com:creasty/ansible-roles.git roles/common
 ```
 
+I already did this for you, so insted of it, just clone the repository with recursive option.
+
+```sh
+$ git clone --recursive git@github.com:creasty/ansible-playbooks-example.git
+```
+
+
 ### 2. A litte configuration in your playbook file
 
 ```yaml
