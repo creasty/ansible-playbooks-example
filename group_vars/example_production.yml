@@ -1,7 +1,6 @@
 app:
-  name:        example
-  path:        /home/webapp/example
-  server_name: www.example.dev
+  name: example
+  path: /home/webapp/example
 
 user:
   name:           webapp
