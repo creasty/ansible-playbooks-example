@@ -60,8 +60,8 @@ $ git clone --recursive git@github.com:creasty/ansible-playbooks-example.git
 # /group_vars/example_production.yml
 
 app:
-  name:        example
-  server_name: www.example.dev
+  name: example
+  path: /home/webapp/example
 
 user:
   # ...
@@ -79,7 +79,7 @@ user:
 # ...
 ```
 
-### Ignite! (run playbook)
+### 5. Run playbook
 
 ```sh
 $ ansible-playbook -i hosts ignitions/example_production.yml
