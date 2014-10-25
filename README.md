@@ -47,9 +47,8 @@ $ git clone --recursive git@github.com:creasty/ansible-playbooks-example.git
   # ...
 
   vars:
-    common_path:      ../../common
-    assets_path:      ../roles/example_production
-    loop_assets_path: ../example_production
+    common_path: ../common
+    role_path:   ../example_production
 
   # ...
 ```
@@ -72,10 +71,10 @@ user:
 ```yaml
 # /roles/example_production/tasks/main.yml
 
-- include: '{{ common_path }}/common.yml'
-- include: '{{ common_path }}/ntp.yml'
-- include: '{{ common_path }}/user.yml'
-- include: '{{ common_path }}/app.yml'
+- include: '../../common/common.yml'
+- include: '../../common/ntp.yml'
+- include: '../../common/user.yml'
+- include: '../../common/app.yml'
 # ...
 ```
 

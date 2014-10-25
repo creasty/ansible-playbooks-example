@@ -3,9 +3,8 @@
   sudo:  true
 
   vars:
-    common_path:      ../../common
-    assets_path:      ../roles/example_production
-    loop_assets_path: ../example_production
+    common_path: ../common
+    role_path:   ../example_production
 
   roles:
     - ../roles/example_production
